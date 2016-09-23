@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>A02 QUnit Test Results</title>
+  <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.0.1.css">
+</head>
+<!-- This HTML and Javascript come from Denise Case's M03 Example-->
+<body>
+  <!-- the qunit div displays testing results -->
+  <div id="qunit"></div>
+  <!-- the qunit-fixture div is for tests affecting the DOM -->
+  <div id="qunit-fixture">
+    <form name="GPA">
+<table border=5  cellpadding="5" 
+cellspacing="2">
+<th></th>
+<th>Grade</th>
+<th># of Credits</th>
+	<tr>
+		<td>1st Class</td>
+		<td><select name="G1"> 
+			<option></option>
+			<option value="A">A </option>
+			<option value="B">B </option>
+			<option value="C">C </option>
+			<option value="D">D </option>
+			<option value="F">F </option>
+		</select>
+		</td>
+		<td><input type="TEXT" size=5 name="C1" align=TOP 
+		maxlength=1 onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
+	</tr>
+	<tr>
+		<td>2nd Class</td>
+		<td><select name="G2"> 
+			<option></option>
+			<option value="A">A </option>
+			<option value="B">B </option>
+			<option value="C">C </option>
+			<option value="D">D </option>
+			<option value="F">F </option>
+		</select>
+		</td>
+		<td><input type=TEXT size=5 name="C2" align=TOP 
+		maxlength=1 onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
+	</tr>
+	<tr>
+		<td>3rd Class</td>
+		<td><select name="G3"> 
+			<option></option>
+			<option value="A">A </option>
+			<option value="B">B </option>
+			<option value="C">C </option>
+			<option value="D">D </option>
+			<option value="F">F </option>
+		</select>
+		</td>
+		<td><input type=TEXT size=5 name="C3" align=TOP 
+		maxlength=1 onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
+	</tr>
+	<tr>
+		<td>4th Class</td>
+		<td><select name="G4"> 
+			<option></option>
+			<option value="A">A </option>
+			<option value="B">B </option>
+			<option value="C">C </option>
+			<option value="D">D </option>
+			<option value="F">F </option>
+		</select>
+		</td>
+		<td><input type=TEXT size=5 name="C4" align=TOP 
+		maxlength=1 onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
+	</tr>
+	<tr>
+		<td>5th Class</td>
+		<td><select name="G5"> 
+			<option></option>
+			<option value="A">A </option>
+			<option value="B">B </option>
+			<option value="C">C </option>
+			<option value="D">D </option>
+			<option value="F">F </option>
+		</select>
+		</td>
+		<td><input type=TEXT size=5 name="C5" align=TOP 
+		maxlength=1 onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
+	</tr>
+	<tr>
+		<td>6th Class</td>
+		<td><select name="G6"> 
+			<option></option>
+			<option value="A">A </option>
+			<option value="B">B </option>
+			<option value="C">C </option>
+			<option value="D">D </option>
+			<option value="F">F </option>
+		</select>
+		</td>
+		<td><input type=TEXT size=5 name="C6" align=TOP 
+		maxlength=1 onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
+	</tr>
+	<tr>
+		<td>7th Class</td>
+		<td><select name="G7"> 
+			<option></option>
+			<option value="A">A </option>
+			<option value="B">B </option>
+			<option value="C">C </option>
+			<option value="D">D </option>
+			<option value="F">F </option>
+		</select>
+		</td>
+		<td><input type=TEXT size=5 name="C7" align=TOP 
+		maxlength=1 onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
+	</tr>
+	<tr>
+		<td>8th Class</td>
+		<td><select name="G8"> 
+			<option></option>
+			<option value="A">A </option>
+			<option value="B">B </option>
+			<option value="C">C </option>
+			<option value="D">D </option>
+			<option value="F">F </option>
+		</select>
+		</td>
+		<td><input type=TEXT size=5 name="C8" align=TOP 
+		maxlength=1 onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
+	</tr>
+	
+	<tr align="right">
+		<td COLSPAN=3><input type="button" value="Calculate GPA" 
+		NAME="calc"
+		OnClick="gpacalc()"></td>
+	
+
+	</tr>
+</table>
+</form>
+  </div>
+  <br/>
+  <p>Reminder: Include all the necessary JS files in the html file (in order). </p>
+  <!-- References:  https://www.sitepoint.com/getting-started-qunit/ -->
+  <script src="https://code.jquery.com/qunit/qunit-2.0.1.js"></script>
+  <script src="gpa.js"></script>
+  <script src="A02QUnitTesting.js"></script>
+
+</body>
+</html>
