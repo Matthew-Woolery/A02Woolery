@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<link  rel="stylesheet" type="text/css" href="Woolery_Matthew.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="gpa.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+	document.getElementById('answer').value = gpacalc();
+</script>	
+<script>
+$(document).ready(function()
+{
+    $("button").click(function()
+	{
+        $("a").css("visibility", "visible");
+    });
+});
+
+</script
+
+<head>
+	<title>Matt</title>
+</head>
+
+<body>
+<div>
+
+	<ul>
+		<li>Matt Woolery's Site</li>
+		<li><a href="index.html">Home</a></li>
+		<li style="menu"><a href="gpa.html">GPA Calculator</a></li>
+		<li><a href="pics_and_stuff.html">Pictures and Videos</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+	
+	<h1> Welcome to the Northwest GPA Calculator</h1>
+	</br>
+	
+	<form name="GPA">
+<table border=5  cellpadding="5" 
+cellspacing="2">
+<th></th>
+<th>Grade</th>
+<th># of Credits</th>
+	<tr>
+		<td>1st Class</td>
+		<td><select name="G1"> 
+			<option></option>
+			<option value="A">A </option>
+			<option value="B">B </option>
+			<option value="C">C </option>
+			<option value="D">D </option>
+			<option value="F">F </option>
+		</select>
+		</td>
+		<td><input type="TEXT" size=5 name="C1" align=TOP 
+		maxlength=1 onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
+	</tr>
+	<tr>
+		<td>2nd Class</td>
+		<td><select name="G2"> 
+			<option></option>
+			<option value="A">A </option>
+			<option value="B">B </option>
+			<option value="C">C </option>
+			<option value="D">D </option>
+			<option value="F">F </option>
+		</select>
+		</td>
+		<td><input type=TEXT size=5 name="C2" align=TOP 
+		maxlength=1 onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
+	</tr>
+	<tr>
+		<td>3rd Class</td>
+		<td><select name="G3"> 
+			<option></option>
+			<option value="A">A </option>
+			<option value="B">B </option>
+			<option value="C">C </option>
+			<option value="D">D </option>
+			<option value="F">F </option>
+		</select>
+		</td>
+		<td><input type=TEXT size=5 name="C3" align=TOP 
+		maxlength=1 onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
+	</tr>
+	<tr>
+		<td>4th Class</td>
+		<td><select name="G4"> 
+			<option></option>
+			<option value="A">A </option>
+			<option value="B">B </option>
+			<option value="C">C </option>
+			<option value="D">D </option>
+			<option value="F">F </option>
+		</select>
+		</td>
+		<td><input type=TEXT size=5 name="C4" align=TOP 
+		maxlength=1 onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
+	</tr>
+	<tr>
+		<td>5th Class</td>
+		<td><select name="G5"> 
+			<option></option>
+			<option value="A">A </option>
+			<option value="B">B </option>
+			<option value="C">C </option>
+			<option value="D">D </option>
+			<option value="F">F </option>
+		</select>
+		</td>
+		<td><input type=TEXT size=5 name="C5" align=TOP 
+		maxlength=1 onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
+	</tr>
+	<tr>
+		<td>6th Class</td>
+		<td><select name="G6"> 
+			<option></option>
+			<option value="A">A </option>
+			<option value="B">B </option>
+			<option value="C">C </option>
+			<option value="D">D </option>
+			<option value="F">F </option>
+		</select>
+		</td>
+		<td><input type=TEXT size=5 name="C6" align=TOP 
+		maxlength=1 onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
+	</tr>
+	<tr>
+		<td>7th Class</td>
+		<td><select name="G7"> 
+			<option></option>
+			<option value="A">A </option>
+			<option value="B">B </option>
+			<option value="C">C </option>
+			<option value="D">D </option>
+			<option value="F">F </option>
+		</select>
+		</td>
+		<td><input type=TEXT size=5 name="C7" align=TOP 
+		maxlength=1 onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
+	</tr>
+	<tr>
+		<td>8th Class</td>
+		<td><select name="G8"> 
+			<option></option>
+			<option value="A">A </option>
+			<option value="B">B </option>
+			<option value="C">C </option>
+			<option value="D">D </option>
+			<option value="F">F </option>
+		</select>
+		</td>
+		<td><input type=TEXT id="button" size=5 name="C8" align=TOP 
+		maxlength=1 onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
+	</tr>
+	
+	<tr>
+		<td COLSPAN=2><input type="button" value="Calculate GPA" 
+		NAME="calc"
+		OnClick="gpacalc()"></td>
+		<td>
+		<input type="text" readonly="readonly" size=5 id="answer" align="left" value=""
+		maxlength=5 /></td>
+	</tr>
+	
+		
+	
+
+	</tr>
+</table>
+</form>
+<br>
+<button>Change Show Unit Test Link</button>
+</CENTER>
+<a href="A02QUnitTesting.html" style="visibility: hidden;"> Unit Testing </a>
+<BR>
+
+
+
+
+
+	</div>
+</body>
+
+
+
+
+</html>
