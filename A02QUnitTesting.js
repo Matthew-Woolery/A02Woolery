@@ -5,15 +5,26 @@ QUnit.test("Testing QUnit Functionality", function (assert) {
 });
 
 
-QUnit.test('No Paramaters, return 0', function (assert) {
-    assert.strictEqual(gpacalc() , 0, 'No parameters returns 0');
+QUnit.test('get grade uppercase', function (assert) {
+    assert.strictEqual(getgrade("A") , 4, 'A=4');
 
    
 });
-QUnit.test('A,4  return 4', function (assert) {
-    G1= "A";
-    C1= 4;
-    assert.strictEqual(gpacalc() , 4, 'A,4 equals 4');
+QUnit.test('get grade lowercase', function (assert) {
+  
+    assert.strictEqual(getgrade("a") , 4, 'a = 4');
+
+   
+});
+QUnit.test('get grade 1', function (assert) {
+  
+    assert.strictEqual(getgrade(1) , 0, 'return 0 for numbers');
+
+   
+});
+QUnit.test('get grade E', function (assert) {
+  
+    assert.strictEqual(getgrade("E") , 0, 'return 0 for non letter grades');
 
    
 });

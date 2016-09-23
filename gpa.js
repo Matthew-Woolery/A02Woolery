@@ -1,5 +1,42 @@
 //I used http://www.javascriptkit.com/script/cut48.shtml to base how on how to make the gpa calculator
 //I removed some of the code that was unneccassary because of the way that I implemented it was different.
+function getgrade(text)
+{
+        
+        
+        if (isNaN(text))
+        {
+            var grade = text.toUpperCase();    
+                 if (grade =="A")
+                 {
+                         return 4;
+                }
+                  if (grade =="B")
+                         {
+                          return 3;
+                         }
+                     if (grade =="C")
+                        {
+                             return 2;
+                        }
+         if (grade =="D")
+        {
+                return 1;
+        }
+         if (grade =="F")
+        {
+                return 0;
+        }
+        if (grade!=="A"||grade!=="B"||grade!=="C"||grade!=="D"||grade!=="F")
+         {
+                 return 0;
+         }
+
+        }
+        else{
+                return 0;
+        }
+}
 function gpacalc()
 {
 //define valid grades and their values
@@ -13,15 +50,15 @@ var gradecount = 5;
 
 //g= grade c= credit
 g[0] = "A"; 
-c[0] = 4; 
+c[0] = getgrade("A"); 
 g[1] = "B";
-c[1] = 3;
+c[1] = getgrade("B");
 g[2] = "C";
-c[2] = 2;
+c[2] = getgrade("C");
 g[3] = "D";
-c[3] = 1;
+c[3] = getgrade("D");
 g[4] = "F";
-c[4] = 0;
+c[4] = getgrade("F");
 //Get the form input
 grade[0] = document.GPA.G1.value;
 grade[1] = document.GPA.G2.value;
