@@ -84,7 +84,6 @@ var gpa = 0;
 for (var i = 0; i < 5 + 3; i++)
         {
         if (grade[i] == "") break;
-//      if (isNaN(parseInt(incr[x]))) alert("Error- You did not enter a numeric  credits value for Class If the class is worth 0 credits then enter the number 0 in  the field."); 
         var validate = 0;
         for (var j = 0; j < gradecount; j++)
                 {
